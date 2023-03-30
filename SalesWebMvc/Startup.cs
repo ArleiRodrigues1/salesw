@@ -2,7 +2,7 @@
 using System.Linq;
 using SalesWebMvc.Data;
 using System.Globalization;
-//using SalesWebMvc.Services;
+using SalesWebMvc.Services;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 using Microsoft.Extensions.Hosting;
@@ -33,6 +33,8 @@ namespace SalesWebMvc
                 options.UseMySql(Configuration.GetConnectionString("SalesWebMvcContext"), builder =>
                     builder.MigrationsAssembly("SalesWebMvc")));
 
+            services.AddScoped<DepartmentService>();
+            services.AddScoped<SellerService>();
             services.AddScoped<SeedingService>();
 
         }

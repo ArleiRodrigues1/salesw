@@ -1,0 +1,59 @@
+﻿@model IEnumerable<SalesWebMvc.Models.Seller>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2 class="text-dark" style="font-size: 20px !important;">Vendedores</h2>
+
+<table class="table bg-sucess table-hover table-responsive" style="border-radius: 5px !important;">
+    <tbody>
+    <thead class="bg-success text-white">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Aniversario)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SalarioBase)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <i class="bx bxs-user"></i>@Html.DisplayFor(modelItem => item.Nome)
+                </td>
+                <td>
+                    <i class="bx bxs-envelope"></i>@Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Aniversario)
+                </td>
+                <td>
+                    <i class="bx bx-dollar"></i>@Html.DisplayFor(modelItem => item.SalarioBase)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Detalhes</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Deletar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<p>
+    <a asp-action="Create" class="btn btn-sucess text-white" style="background-color: #18bc9c !important;">
+        Adicionar Vendedor
+        <i class="bx bx-user-plus"></i>
+    </a>
+</p>

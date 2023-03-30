@@ -1,0 +1,51 @@
+﻿@model SalesWebMvc.Models.ViewModels.SellerFormViewModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1 class="text-dark" style="font-size: 20px !important;">Adicionar vendedores</h1>
+
+
+<hr class="text-primary" />
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div class="form-group">
+                <label asp-for="Seller.Nome" class="control-label"></label>
+                <input asp-for="Seller.Nome" class="form-control" />
+                <span asp-validation-for="Seller.Nome" class="text-success"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Seller.Email" class="control-label"></label>
+                <input asp-for="Seller.Email" class="form-control" />
+                <span asp-validation-for="Seller.Email" class="text-success"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Seller.Aniversario" class="control-label"></label>
+                <input asp-for="Seller.Aniversario" class="form-control" />
+                <span asp-validation-for="Seller.Aniversario" class="text-success"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Seller.SalarioBase" class="control-label"></label>
+                <input asp-for="Seller.SalarioBase" class="form-control" />
+                <span asp-validation-for="Seller.SalarioBase" class="text-success"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Seller.DepartmentId" class="control-label"></label>
+                <select asp-for="Seller.DepartmentId" asp-items="@(new SelectList(Model.Departments,"Id","Nome"))" class="form-control"></select>
+                <span asp-validation-for="Seller.DepartmentId" class="text-success"></span>
+
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-success mt-3" />
+                <a asp-action="Index" class="ml-5" style="position: relative !important; top: 10px!important;">Voltar</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
