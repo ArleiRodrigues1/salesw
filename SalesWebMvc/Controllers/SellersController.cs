@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Linq;
-using System.Diagnostics;
+using SalesWebMvc.Data;
 using SalesWebMvc.Models;
+using System.Diagnostics;
 using SalesWebMvc.Services;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using SalesWebMvc.Models.ViewModels;
 using SalesWebMvc.Services.Exceptions;
-
 
 namespace SalesWebMvc.Controllers
 {
@@ -110,8 +110,8 @@ namespace SalesWebMvc.Controllers
                 return RedirectToAction(nameof(Error), new { message = "Id not found" });
             }
 
-            List<Department> departments = await _departmentService.FindAllAsync();
-            SellerFormViewModel viewModel = new SellerFormViewModel { Seller = obj, Departments = departments };
+            List<Department> sellers = await _departmentService.FindAllAsync();
+            SellerFormViewModel viewModel = new SellerFormViewModel { Seller = obj, Departments = (ICollection<Department>)sellers };
             return View(viewModel);
         }
 
@@ -122,7 +122,7 @@ namespace SalesWebMvc.Controllers
             if (!ModelState.IsValid)
             {
                 var departments = await _departmentService.FindAllAsync();
-                var viewModel = new SellerFormViewModel { Seller = seller, Departments = departments };
+                var viewModel = new SellerFormViewModel { Seller = seller, Departments = (ICollection<Department>)departments };
                 return View(viewModel);
             }
             if (id != seller.Id)

@@ -34,8 +34,10 @@ namespace SalesWebMvc
                     builder.MigrationsAssembly("SalesWebMvc")));
 
             services.AddScoped<DepartmentService>();
+            services.AddScoped<SalesRecordService>();
             services.AddScoped<SellerService>();
             services.AddScoped<SeedingService>();
+        //    services.AddScoped<newSalesServices>();
 
         }
 

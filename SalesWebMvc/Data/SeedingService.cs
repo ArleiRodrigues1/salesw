@@ -91,65 +91,65 @@ namespace SalesWebMvc.Data
             //Mar 2022
             SalesRecord r21 = new SalesRecord(new int(), new DateTime(2022, 03, 01), 1500.0, SaleStatus.Billed, s1);
 
-            SalesRecord r22 = new SalesRecord(new int(), new DateTime(2022, 03, 05), 3000.0, SaleStatus.Billed, s2);
+            SalesRecord r22 = new SalesRecord(new int(), new DateTime(2022, 03, 05), 2000.0, SaleStatus.Billed, s2);
 
             SalesRecord r23 = new SalesRecord(new int(), new DateTime(2022, 03, 09), 3500.0, SaleStatus.Pending, s3);
 
-            SalesRecord r24 = new SalesRecord(new int(), new DateTime(2022, 03, 11), 2500.0, SaleStatus.Billed, s1);
+            SalesRecord r24 = new SalesRecord(new int(), new DateTime(2022, 03, 11), 6500.0, SaleStatus.Billed, s1);
 
-            SalesRecord r25 = new SalesRecord(new int(), new DateTime(2022, 03, 15), 5000.0, SaleStatus.Canceled, s5);
+            SalesRecord r25 = new SalesRecord(new int(), new DateTime(2022, 03, 15), 4000.0, SaleStatus.Canceled, s5);
 
-            SalesRecord r26 = new SalesRecord(new int(), new DateTime(2022, 03, 18), 10.000, SaleStatus.Billed, s1);
+            SalesRecord r26 = new SalesRecord(new int(), new DateTime(2022, 03, 18), 9000, SaleStatus.Billed, s1);
 
             SalesRecord r27 = new SalesRecord(new int(), new DateTime(2022, 03, 20), 8000.0, SaleStatus.Pending, s2);
 
             SalesRecord r28 = new SalesRecord(new int(), new DateTime(2022, 03, 24), 6000.0, SaleStatus.Billed, s3);
 
-            SalesRecord r29 = new SalesRecord(new int(), new DateTime(2022, 03, 26), 11.000, SaleStatus.Billed, s4);
+            SalesRecord r29 = new SalesRecord(new int(), new DateTime(2022, 03, 26), 10.000, SaleStatus.Billed, s4);
 
-            SalesRecord r30 = new SalesRecord(new int(), new DateTime(2022, 03, 28), 5000.0, SaleStatus.Billed, s5);
+            SalesRecord r30 = new SalesRecord(new int(), new DateTime(2022, 03, 28), 3000.0, SaleStatus.Billed, s5);
 
             //Abr 2022
-            SalesRecord r31 = new SalesRecord(new int(), new DateTime(2022, 04, 01), 1500.0, SaleStatus.Billed, s1);
+            SalesRecord r31 = new SalesRecord(new int(), new DateTime(2022, 04, 01), 500.0, SaleStatus.Billed, s1);
 
-            SalesRecord r32 = new SalesRecord(new int(), new DateTime(2022, 04, 05), 3000.0, SaleStatus.Billed, s2);
+            SalesRecord r32 = new SalesRecord(new int(), new DateTime(2022, 04, 05), 2000.0, SaleStatus.Billed, s2);
 
-            SalesRecord r33 = new SalesRecord(new int(), new DateTime(2022, 04, 09), 3500.0, SaleStatus.Pending, s3);
+            SalesRecord r33 = new SalesRecord(new int(), new DateTime(2022, 04, 09), 4500.0, SaleStatus.Pending, s3);
 
-            SalesRecord r34 = new SalesRecord(new int(), new DateTime(2022, 04, 12), 2500.0, SaleStatus.Billed, s4);
+            SalesRecord r34 = new SalesRecord(new int(), new DateTime(2022, 04, 12), 650.0, SaleStatus.Billed, s4);
 
-            SalesRecord r35 = new SalesRecord(new int(), new DateTime(2022, 04, 15), 5000.0, SaleStatus.Canceled, s5);
+            SalesRecord r35 = new SalesRecord(new int(), new DateTime(2022, 04, 15), 850.0, SaleStatus.Canceled, s5);
 
             SalesRecord r36 = new SalesRecord(new int(), new DateTime(2022, 04, 18), 10.000, SaleStatus.Billed, s1);
 
             SalesRecord r37 = new SalesRecord(new int(), new DateTime(2022, 04, 20), 8000.0, SaleStatus.Pending, s2);
 
-            SalesRecord r38 = new SalesRecord(new int(), new DateTime(2022, 04, 24), 6000.0, SaleStatus.Billed, s3);
+            SalesRecord r38 = new SalesRecord(new int(), new DateTime(2022, 04, 24), 2000.0, SaleStatus.Billed, s3);
 
-            SalesRecord r39 = new SalesRecord(new int(), new DateTime(2022, 04, 26), 11.000, SaleStatus.Billed, s4);
+            SalesRecord r39 = new SalesRecord(new int(), new DateTime(2022, 04, 26), 1000.0, SaleStatus.Billed, s4);
 
-            SalesRecord r40 = new SalesRecord(new int(), new DateTime(2022, 04, 28), 5000.0, SaleStatus.Billed, s5);
+            SalesRecord r40 = new SalesRecord(new int(), new DateTime(2022, 04, 28), 600.0, SaleStatus.Billed, s5);
 
             //Maio 2022
-            SalesRecord r41 = new SalesRecord(new int(), new DateTime(2022, 05, 01), 1500.0, SaleStatus.Billed, s1);
+            SalesRecord r41 = new SalesRecord(new int(), new DateTime(2022, 05, 01), 5500.0, SaleStatus.Billed, s1);
 
-            SalesRecord r42 = new SalesRecord(new int(), new DateTime(2022, 05, 05), 3000.0, SaleStatus.Billed, s2);
+            SalesRecord r42 = new SalesRecord(new int(), new DateTime(2022, 05, 05), 6000.0, SaleStatus.Billed, s2);
 
-            SalesRecord r43 = new SalesRecord(new int(), new DateTime(2022, 05, 09), 3500.0, SaleStatus.Pending, s3);
+            SalesRecord r43 = new SalesRecord(new int(), new DateTime(2022, 05, 09), 7500.0, SaleStatus.Pending, s3);
 
-            SalesRecord r44 = new SalesRecord(new int(), new DateTime(2022, 05, 12), 2500.0, SaleStatus.Billed, s4);
+            SalesRecord r44 = new SalesRecord(new int(), new DateTime(2022, 05, 12), 1500.0, SaleStatus.Billed, s4);
 
-            SalesRecord r45 = new SalesRecord(new int(), new DateTime(2022, 05, 15), 5000.0, SaleStatus.Canceled, s5);
+            SalesRecord r45 = new SalesRecord(new int(), new DateTime(2022, 05, 15), 500.0, SaleStatus.Canceled, s5);
 
-            SalesRecord r46 = new SalesRecord(new int(), new DateTime(2022, 05, 18), 10.000, SaleStatus.Billed, s1);
+            SalesRecord r46 = new SalesRecord(new int(), new DateTime(2022, 05, 18), 1000.0, SaleStatus.Billed, s1);
 
-            SalesRecord r47 = new SalesRecord(new int(), new DateTime(2022, 05, 20), 8000.0, SaleStatus.Pending, s2);
+            SalesRecord r47 = new SalesRecord(new int(), new DateTime(2022, 05, 20), 4000.0, SaleStatus.Pending, s2);
 
-            SalesRecord r48 = new SalesRecord(new int(), new DateTime(2022, 05, 24), 6000.0, SaleStatus.Billed, s3);
+            SalesRecord r48 = new SalesRecord(new int(), new DateTime(2022, 05, 24), 5000.0, SaleStatus.Billed, s3);
 
-            SalesRecord r49 = new SalesRecord(new int(), new DateTime(2022, 05, 26), 11.000, SaleStatus.Billed, s4);
+            SalesRecord r49 = new SalesRecord(new int(), new DateTime(2022, 05, 26), 9000.0, SaleStatus.Billed, s4);
 
-            SalesRecord r50 = new SalesRecord(new int(), new DateTime(2022, 05, 28), 5000.0, SaleStatus.Billed, s5);
+            SalesRecord r50 = new SalesRecord(new int(), new DateTime(2022, 05, 28), 1500.0, SaleStatus.Billed, s5);
 
             //Jun 2022
             SalesRecord r51 = new SalesRecord(new int(), new DateTime(2022, 06, 01), 1500.0, SaleStatus.Billed, s1);

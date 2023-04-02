@@ -33,6 +33,31 @@ namespace SalesWebMvc.Migrations
                     b.ToTable("Department");
                 });
 
+            modelBuilder.Entity("SalesWebMvc.Models.Sales", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("NewSales")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<double>("Price")
+                        .HasColumnType("double");
+
+                    b.Property<int?>("SellerIdId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("SellerIdId");
+
+                    b.ToTable("Sales");
+                });
+
             modelBuilder.Entity("SalesWebMvc.Models.SalesRecord", b =>
                 {
                     b.Property<int>("Id")
@@ -87,6 +112,13 @@ namespace SalesWebMvc.Migrations
                     b.HasIndex("DepartmentId");
 
                     b.ToTable("Seller");
+                });
+
+            modelBuilder.Entity("SalesWebMvc.Models.Sales", b =>
+                {
+                    b.HasOne("SalesWebMvc.Models.Seller", "SellerId")
+                        .WithMany()
+                        .HasForeignKey("SellerIdId");
                 });
 
             modelBuilder.Entity("SalesWebMvc.Models.SalesRecord", b =>

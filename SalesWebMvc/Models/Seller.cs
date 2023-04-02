@@ -35,7 +35,6 @@ namespace SalesWebMvc.Models
         public int DepartmentId { get; set; }
         public ICollection<SalesRecord> Sales { get; set; } = new List<SalesRecord>();
 
-
         public Seller() { }
 
         public Seller(int id, string nome, string email, DateTime aniversario, double salarioBase, Department department)
@@ -70,6 +69,6 @@ namespace SalesWebMvc.Models
         public double TotalSales(DateTime initial, DateTime final)
         {
             return Sales.Where(sr => sr.Data >= initial && sr.Data <= final).Sum(sr => sr.Amount);
-        }
+        }    
     }
 }
