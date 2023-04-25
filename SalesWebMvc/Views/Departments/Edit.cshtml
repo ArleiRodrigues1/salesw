@@ -17,15 +17,14 @@
                 <span asp-validation-for="Nome" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Salvar" class="btn btn-success mt-3 mb-3" />
+                <input type="submit" value="Salvar" class="btn btn-success mt-3 mb-3" />|
+                  <a asp-action="Index"> Voltar</a>
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index" class="ml-5">Voltar</a>
-</div>
+
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
